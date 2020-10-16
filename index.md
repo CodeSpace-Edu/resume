@@ -1,3 +1,10 @@
+## Welcome to My Home Page
+
+{% assign date = '2020-04-13T10:20:00Z' %}
+
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/CodeSpace-Edu/resume/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
