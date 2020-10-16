@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My CV</title>
+    <style>
+      html, body {
+        font-family: Arial, sans-serif;
+        margin: 0; /* <---Explain Why */
+      }
+
+      .header {
+        background-color: maroon;
+        color: white;
+        padding: 10px;
+      }
+      
+      .heading {
+        text-align: center;
+      }
+
+      .wrapper {
+        width: 100%;
+      }
+      
+      .sidebar {
+        float: left;
+        width: 35%;
+      }
+
+      .menu {
+        background-color: maroon;
+      }
+
+      .content-info {
+        float: right;
+        width: 60%; 
+        margin-left: 20px;
+      }
+
+      .menu-title {
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      .list {
+        list-style-type: none;
+      }
+
+      .profile-img {
+        width: 100%;
+      }
+
+      .links {
+        color: white;
+        text-decoration: none;
+        /* list-style-type: none; <---//Explain why not used */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Title -->
+    <header class="header">
+      <h1 class="heading">Mpho Ngcobo - Web Developer</h1>
+    </header>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Profile Image -->
+        <img src="./images/profile.png" alt="Profile Image" class="profile-img">
+        <!-- Menu Section -->
+        <div class="menu">
+          <h3 class="menu-title">Menu</h3><!-- Remove Menu -->
+          <ul>
+            <li class="list"><a href="#about" class="links">About</a></li>
+            <li class="list"><a href="#hobbies" class="links">Hobbies</a></li>
+            <li class="list"><a href="#qualifications" class="links">Qualifications</a></li>
+            <li class="list"><a href="#contact-me" class="links">Contact Me</a></li>
+            <li class="list"><a href="#social-media" class="links">Social Media</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Content Info -->
+      <div class="content-info">
+        <h2 id="about">About Me</h2>
+        <p>
+          An enthusiastic web developer with a passion for creating innovative mobile applications that influence society. 
+          In love with the power of analysing and presenting data to help people make meaningful decisions. 
+          A curious person who loves learning new things every day.
+        </p>
+        <h3 id="hobbies">Hobbies</h3>
+        <ul>
+          <li>Soccer</li>
+          <li>Cricket</li>
+          <li>Rugby</li>
+          <li>Tennis</li>
+        </ul>
+        <h3>Skills:</h3>
+        <img src="./images/html.png" alt="HTML Icon" class="skill-imgs" width="100">
+        <img src="./images/css.jpg" alt="CSS Icon" class="skill-imgs" width="100">
+        <h3 id="qualifications">Qualifications</h3>
+        <ol>
+          <li>
+            <a href="https://www.codespace.co.za/" target="_blank"> CodeSpace Graduate </a>
+          </li>
+          <li>UCT Undergraduate</li>
+          <li>High School Diploma</li>
+        </ol>
+        <h3 id="contact-me">Contact Me</h3>
+        <p>Phone number: 0825486245</p>
+        <p>Email address: example@gmail.com</p>
+        <h3 id="social-media">Social Media</h3>
+        <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        <br>
+        <a href="https://github.com/kmbuisha" target="_blank">Github</a>
+      </div>
+    </div>
+  </body>
+</html>
