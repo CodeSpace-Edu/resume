@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Digital Resume">
     <title>My CV</title>
     <style>
       html, body {
@@ -10,8 +12,9 @@
       }
 
       .header {
-        background-color: white;
+        background-color: maroon;
         padding: 10px;
+        color: white;
       }
       
       .heading {
@@ -20,23 +23,22 @@
 
       .wrapper {
         width: 100%;
-        height: 100%;
         margin-top: 10px;
-        background-color: whitesmoke;
+        height: auto;
+        display: inline-flex;
       }
       
       .sidebar {
-        float: left;
         width: 35%;
       }
 
       .menu {
         padding: 15px;
-        background-color: #e6e4e4;
+        background-color: maroon;
+        color: white;
       }
 
       .content-info {
-        float: right;
         width: 60%;
       }
 
@@ -71,7 +73,7 @@
   <body>
     <!-- Main Title -->
     <header class="header">
-      <h1 class="heading">Mpho Ngcobo - Web Developer</h1>
+      <h1 class="heading">Peter Ngcobo - Web Developer</h1>
     </header>
     
     <!-- Wrapper -->
@@ -84,11 +86,12 @@
         <!-- Menu Section -->
         <div class="menu">
           <ul>
-            <li class="list"><a href="#about" class="links">About</a></li>
-            <li class="list"><a href="#hobbies" class="links">Hobbies</a></li>
-            <li class="list"><a href="#qualifications" class="links">Qualifications</a></li>
-            <li class="list"><a href="#contact-me" class="links">Contact Me</a></li>
-            <li class="list"><a href="#social-media" class="links">Social Media</a></li>
+            <li class="menu-list"><a href="#about" class="links">About</a></li>
+            <li class="menu-list"><a href="#interests" class="links">Interests</a></li>
+            <li class="menu-list"><a href="#skills" class="links">Skills</a></li>
+            <li class="menu-list"><a href="#experience" class="links">Experience</a></li>
+            <li class="menu-list"><a href="#education" class="links">Education</a></li>
+            <li class="menu-list"><a href="#contacts" class="links">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -101,28 +104,78 @@
           In love with the power of analysing and presenting data to help people make meaningful decisions. 
           A curious person who loves learning new things every day.
         </p>
-        <h3 id="hobbies">Hobbies</h3>
+        <h3 id="interests">Interests:</h3>
         <ul>
           <li>Soccer</li>
-          <li>Cricket</li>
-          <li>Rugby</li>
           <li>Tennis</li>
+          <li>Rock climbing</li>
+          <li>Surfing</li>
+          <li>Quiz nights</li>
         </ul>
-        <h3>Skills:</h3>
+        <h3 id="skills">Skills:</h3>
         <img src="./images/html.png" alt="HTML Icon" class="skill-imgs" width="100">
-        <img src="./images/css.jpg" alt="CSS Icon" class="skill-imgs" width="100">
-        <h3 id="qualifications">Qualifications</h3>
-        <ol>
-          <li>
-            <a href="https://www.codespace.co.za/" target="_blank" class="external-links"> CodeSpace Graduate </a>
-          </li>
-          <li>UCT Undergraduate</li>
-          <li>High School Diploma</li>
-        </ol>
-        <h3 id="contact-me">Contact Me</h3>
+        <img src="./images/css.png" alt="CSS Icon" class="skill-imgs" width="100">
+        <img src="./images/javascript.png" alt="Javascript Icon" class="skill-imgs" width="100">
+        <h3 id="experience">Experience:</h3>
+        <div>
+          <span>2019 - Present</span>
+          <ul>
+            <li>Freelance Web Developer</li>
+            <li>Full stack web developer specialising in eCommerce websites for small to medium businesses.</li>
+            <li>Built end-to-end web products for 12 companies.</li>
+            <li>Improved sales by up to 72% at one company.</li>
+            <li>Boosted user experience scores by 65% for the company's previous best.</li>
+            <li>Built a website to receive donations for an animal shelter.</li>
+          </ul>
+        </div>
+        <div>
+          <span>2016 - Present</span>
+          <ul>
+            <li>Course Developer at CodeSpace Academy</li>
+            <li>Developed online coding course content for High School students.</li>
+            <li>Created video recordings of code walkthroughs.</li>
+            <li>Collaborated with the awesome CodeSpace team in a distributed team using project management tools and video conferencing.</li>
+          </ul>
+        </div>
+        <div>
+          <span>2015 - 2017</span>
+          <ul>
+            <li>Coffee Barista at Rosetta Roastery</li>
+            <li>Served high quality coffee at one of the leading coffee shops in Cape Town.</li>
+            <li>Managed Saturday stall at the Old Biscuit Mill including setup and POS system.</li>
+            <li>Responsible for espresso machine light maintenance.</li>
+          </ul>
+        </div>
+        <h3 id="education">Education:</h3>
+        <div>
+          <span>2019</span>
+          <ul>
+            <li>Advanced Google Analytics </li>
+            <li>Earned a certificate in Google’s online course to improve my SEO skills.</li>
+          </ul>
+        </div>
+        <div>
+          <span>2018</span>
+          <ul>
+            <li>CodeSpace, Bootcamp in Software Development</li>
+            <li>Learned full stack web development.</li>
+            <li>Excelled in mobile app development.</li>
+            <li>Received award for best capstone project.</li>
+          </ul>
+        </div>
+        <div>
+          <span>2012 - 2016</span>
+          <ul>
+            <li>Claremont High School</li>
+            <li>Achieved 5 distinctions in matric.</li>
+            <li>Received a scholarship in Grade 8.</li>
+            <li>Lead the robotics club as president for two years.</li>
+          </ul>
+        </div>
+        <h3 id="contacts">Contact Me</h3>
         <p>Phone number: 0825486245</p>
         <p>Email address: example@gmail.com</p>
-        <h3 id="social-media">Social Media</h3>
+        <h3>Social Media</h3>
         <a href="https://www.linkedin.com/feed/" target="_blank"  class="external-links">LinkedIn</a>
         <br>
         <a href="https://github.com/kmbuisha" target="_blank"  class="external-links">Github</a>

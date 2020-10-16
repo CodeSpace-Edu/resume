@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Digital Resume">
     <title>My CV</title>
     <style>
       html, body {
@@ -9,6 +11,7 @@
         margin: 0; /* <---Explain Why */
         height: 100%;
         display: block;
+        scroll-behavior: smooth;
       }
 
       header {
@@ -102,6 +105,13 @@
       .ul-list li:first-child {
         font-weight: 600;
       }
+ 
+      .footer {
+        clear: both;
+        text-align: center;
+        background-color: white;
+        padding: 10px;
+      }
 
       /* Helper Classes */
       .padding {
@@ -111,13 +121,11 @@
       .inline-flex {
         display: inline-flex;
       }
-      
-      .footer {
-        clear: both;
-        text-align: center;
-        background-color: white;
-        padding: 10px;
+
+      .full-width {
+        width: 100%;
       }
+     
     </style>
   </head>
   <body>
@@ -174,7 +182,7 @@
         </section>
         <section id="experience-section">
           <h3>Experience:</h3>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2019 - Present</span>
             <ul class="ul-list">
               <li>Freelance Web Developer</li>
@@ -185,7 +193,7 @@
               <li>Built a website to receive donations for an animal shelter.</li>
             </ul>
           </div>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2016 - Present</span>
             <ul class="ul-list">
               <li>Course Developer at CodeSpace Academy</li>
@@ -194,7 +202,7 @@
               <li>Collaborated with the awesome CodeSpace team in a distributed team using project management tools and video conferencing.</li>
             </ul>
           </div>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2015 - 2017</span>
             <ul class="ul-list">
               <li>Coffee Barista at Rosetta Roastery</li>
@@ -206,14 +214,14 @@
         </section>
         <section id="education-section">
           <h3>Education:</h3>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2019</span>
             <ul class="ul-list">
               <li>Advanced Google Analytics </li>
               <li>Earned a certificate in Google’s online course to improve my SEO skills.</li>
             </ul>
           </div>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2018</span>
             <ul class="ul-list">
               <li>CodeSpace, Bootcamp in Software Development</li>
@@ -222,7 +230,7 @@
               <li>Received award for best capstone project.</li>
             </ul>
           </div>
-          <div class="inline-flex">
+          <div class="inline-flex full-width">
             <span class="set-width">2012 - 2016</span>
             <ul class="ul-list">
               <li>Claremont High School</li>
