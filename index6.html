@@ -24,6 +24,7 @@
       }
 
       .wrapper {
+        width: 100%;
         background-color: whitesmoke;
         display: inline-flex;
         height: auto;
@@ -42,19 +43,7 @@
         padding-left: 0;
       }
 
-      .content-info {
-        width: 70%;
-        padding: 2%;
-      }
-
-      .menu-title {
-        color: white;
-        text-align: center;
-        text-decoration: underline;
-      }
-
       .menu-list {
-        list-style-type: none;
         padding: 10px;
         text-align: center;
       }
@@ -69,16 +58,17 @@
         color: gray;
       }
 
-      .external-links {
-        color: limegreen;
-      }
-
       .profile-img {
         border-radius: 50%;
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 10%;
+      }
+
+      .content-info {
+        width: 70%;
+        padding: 2%;
       }
 
       #interests-section, #skills-section{
@@ -90,19 +80,13 @@
         clear: both;
       }
 
-      .set-width {
-        width: 115px;
-        display: inline-table;
-      }
-
-      .ul-list {
+      .list {
         margin: 0;
-        list-style: none;
+        list-style-type: none;
         line-height: 1.4;
-        margin-bottom: 15px;
       }
 
-      .ul-list li:first-child {
+      .list li:first-child {
         font-weight: 600;
       }
  
@@ -114,6 +98,11 @@
       }
 
       /* Helper Classes */
+      .fixed-width {
+        width: 115px;
+        display: inline-table;
+      }
+
       .padding {
         padding: 10px;
       }
@@ -146,7 +135,7 @@
         <img src="./images/profile.png" alt="Profile Image" class="profile-img">
         <!-- Menu Section -->
         <div class="menu">
-          <ul>
+          <ul class="list">
             <li class="menu-list"><a href="#about-section" class="links">About</a></li>
             <li class="menu-list"><a href="#interests-section" class="links">Interests</a></li>
             <li class="menu-list"><a href="#skills-section" class="links">Skills</a></li>
@@ -185,8 +174,8 @@
         <section id="experience-section">
           <h3>Experience</h3>
           <div class="inline-flex full-width">
-            <span class="set-width">2019 - Present</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2019 - Present</span>
+            <ul class="list">
               <li>Freelance Web Developer</li>
               <li>Full stack web developer specialising in eCommerce websites for small to medium businesses.</li>
               <li>Built end-to-end web products for 12 companies.</li>
@@ -196,8 +185,8 @@
             </ul>
           </div>
           <div class="inline-flex full-width">
-            <span class="set-width">2016 - Present</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2016 - Present</span>
+            <ul class="list">
               <li>Course Developer at CodeSpace Academy</li>
               <li>Developed online coding course content for High School students.</li>
               <li>Created video recordings of code walkthroughs.</li>
@@ -205,8 +194,8 @@
             </ul>
           </div>
           <div class="inline-flex full-width">
-            <span class="set-width">2015 - 2017</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2015 - 2017</span>
+            <ul class="list">
               <li>Coffee Barista at Rosetta Roastery</li>
               <li>Served high quality coffee at one of the leading coffee shops in Cape Town.</li>
               <li>Managed Saturday stall at the Old Biscuit Mill including setup and POS system.</li>
@@ -217,15 +206,15 @@
         <section id="education-section">
           <h3>Education</h3>
           <div class="inline-flex full-width">
-            <span class="set-width">2019</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2019</span>
+            <ul class="list">
               <li>Advanced Google Analytics </li>
               <li>Earned a certificate in Google’s online course to improve my SEO skills.</li>
             </ul>
           </div>
           <div class="inline-flex full-width">
-            <span class="set-width">2018</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2018</span>
+            <ul class="list">
               <li>CodeSpace, Bootcamp in Software Development</li>
               <li>Learned full stack web development.</li>
               <li>Excelled in mobile app development.</li>
@@ -233,8 +222,8 @@
             </ul>
           </div>
           <div class="inline-flex full-width">
-            <span class="set-width">2012 - 2016</span>
-            <ul class="ul-list">
+            <span class="fixed-width">2012 - 2016</span>
+            <ul class="list">
               <li>Claremont High School</li>
               <li>Achieved 5 distinctions in matric.</li>
               <li>Received a scholarship in Grade 8.</li>
@@ -260,7 +249,6 @@
         <a href="tel:+27890983829" target="_blank" class="padding"><img src="./images/phone-icon.png" alt="Phone Icon" width="40"></a>
         <a href="mailto:example@gmail.com" target="_blank" class="padding"><img src="./images/email-icon.png" alt="Email Icon" width="40"></a>
         <a href="https://www.linkedin.com/feed/" target="_blank" class="padding"><img src="./images/linkedin-icon.png" alt="LinkedIn Icon" width="40"></a>
-      </footer>
     </footer>
   </body>
 </html>
