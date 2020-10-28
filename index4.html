@@ -5,64 +5,56 @@
     <meta name="description" content="My Digital Resume">
     <title>My CV</title>
     <style>
-      html, body {
+      html,
+      body {
         font-family: Arial, sans-serif;
-        margin: 0; /* <---Explain Why */
+        margin: 0;
       }
 
       .header {
+        text-align: center;
         background-color: maroon;
         color: white;
         padding: 10px;
-      }
-      
-      .headings {
-        text-align: center;
       }
 
       .wrapper {
         display: inline-flex;
         width: 100%;
       }
-      
+
       .sidebar {
         width: 35%;
       }
 
       .menu {
         background-color: maroon;
-        color: white;
+        padding: 10px;
       }
 
       .content-info {
-        width: 60%; 
+        width: 60%;
         margin-left: 20px;
-      }
-
-      .menu-title {
-        color: white;
-        text-align: center;
-        text-decoration: underline;
-      }
-
-      .list {
-        list-style-type: none;
       }
 
       .profile-img {
         width: 100%;
       }
 
+      .list {
+        list-style-type: none;
+      }
+
       .links {
         color: white;
         text-decoration: none;
-        /* list-style-type: none; <---//Explain why not used */
       }
 
       .footer {
         background-color: maroon;
         color: white;
         text-align: center;
+        padding: 10px;
       }
     </style>
   </head>
@@ -84,13 +76,14 @@
         <img src="./images/profile.png" alt="Profile Image" class="profile-img">
         <!-- Menu Section -->
         <div class="menu">
-          <ul>
+          <ul class="list">
             <li class="menu-list"><a href="#about" class="links">About</a></li>
             <li class="menu-list"><a href="#interests" class="links">Interests</a></li>
             <li class="menu-list"><a href="#skills" class="links">Skills</a></li>
             <li class="menu-list"><a href="#experience" class="links">Experience</a></li>
             <li class="menu-list"><a href="#education" class="links">Education</a></li>
             <li class="menu-list"><a href="#contacts" class="links">Contacts</a></li>
+            <li class="menu-list"><a href="#social-media" class="links">Social Media</a></li>
           </ul>
         </div>
       </div>
